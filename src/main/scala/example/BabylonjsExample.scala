@@ -26,6 +26,9 @@ object ScalaJSExample extends js.JSApp {
     val sphere = Mesh.CreateSphere("sphere1", 16, 2, scene)
     sphere.position.y = 1
     val ground = Mesh.CreateGround("ground1", 6.0, 6.0, 2, scene)
-    engine.runRenderLoop(()=>{scene.render()})  
+    engine.runRenderLoop{()=>
+      scene.render()
+      ground.rotation.y += 0.005
+    }
   }
 }
