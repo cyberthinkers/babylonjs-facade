@@ -8,7 +8,7 @@ An example application is included and is derived from a JavaScript version foun
 ### Getting started
 
 To get started, open `sbt` in this example project, and execute the task
-`fastOptJS`. This creates the file `target/scala-2.11/example-fastopt.js`.
+`fastOptJS`. This creates the file `target/scala-2.11/babylonjs-facade-fastopt.js`.
 You can now open `index-fastopt.html` in your favorite Web browser!
 
 During development, it is useful to use `~fastOptJS` in sbt, so that each
