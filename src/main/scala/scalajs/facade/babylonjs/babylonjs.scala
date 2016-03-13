@@ -984,8 +984,11 @@ class ArcRotateCamera protected () extends TargetCamera {
   var inertialRadiusOffset: Double = js.native
   var lowerAlphaLimit: js.Any = js.native
   var upperAlphaLimit: js.Any = js.native
-  var lowerBetaLimit: Double = js.native
-  var upperBetaLimit: Double = js.native
+
+  // We must be able to set null to remove the limitation. http://www.html5gamedevs.com/topic/3279-unlimited-y-rotation-on-camera/#comment-21360
+  var lowerBetaLimit: js.Any = js.native
+  var upperBetaLimit: js.Any = js.native
+
   var lowerRadiusLimit: js.Any = js.native
   var upperRadiusLimit: js.Any = js.native
   var angularSensibilityX: Double = js.native
